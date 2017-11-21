@@ -1,0 +1,19 @@
+body {
+    background-color: #3d3c3a;
+    padding: 0;
+    margin: auto;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    padding:4em 2em;
+}
+
+.logo {
+    width: 300px;
+}
