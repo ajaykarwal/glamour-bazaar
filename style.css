@@ -1,19 +1,97 @@
+:root {
+    --gold:#dda93c;
+    --off-white: #f9f9f9;
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+
 body {
     background-color: #3d3c3a;
     padding: 0;
     margin: auto;
-    text-align: center;
-}
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--off-white);
+    line-height: 1.5;
+    letter-spacing: .025em;
 
+}
+h1,h2,h3,h4,h5 {
+    font-weight: 300;
+    margin-top: 0;
+    color: var(--gold);
+}
 img {
     max-width: 100%;
     height: auto;
 }
 
 .wrapper {
-    padding:4em 2em;
+    padding: 4em 2em;
+    max-width:900px;
+    margin: auto;
 }
 
 .logo {
     width: 300px;
+    display: block;
+    margin:auto;
+}
+
+.signup-form {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: 1fr;
+    
+    margin-top: 3em;
+}
+
+@media screen and (min-width: 480px) {
+    .signup-form {
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input {
+    display: block;
+    border:0;
+    border-radius: 0;
+    padding:5px;
+    font-size: 1em;
+    width: 100%;
+    height: 2.25em;
+}
+input[type=submit] {
+    background-color: var(--gold);
+    color: var(--off-white);
+    font-size: 1.5em;
+}
+small {
+    color: var(--gold);
+}
+.asterisk {
+    color: var(--gold);
+}
+.datefield .subfield {
+    display: inline-block;
+}
+.datefield .subfield input {
+    width: 50px;
+}
+.mc-field-group {
+    margin-bottom: 1em;
 }
