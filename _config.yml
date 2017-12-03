@@ -1,0 +1,30 @@
+###### Site settings
+title            : Glamour Bazaar
+metatitle        : Accessorise Every Moment
+description      : Statement jewelry from Glamour Bazaar.
+tagline          : Statement jewelry from Glamour Bazaar.
+email            : hello@glamourbazaar.co.uk
+base_url         : http://glamourbazaar.co.uk
+encoding         : utf-8
+
+# google_analytics : UA-93339523-1
+
+include: ["_pages"]
+
+#Collections
+collections:
+  products:
+    output: true
+    # permalink: /:path/
+
+# Build settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+permalink: /:title/
+sass:
+  style: compressed
+
+future: false

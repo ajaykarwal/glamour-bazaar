@@ -1,0 +1,15 @@
+.wrapper {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 1fr;
+  
+  @media (min-width: $break-sm) {
+    height: 100vh;
+    grid-template-columns: 300px 1fr 300px;
+  }
+}
+
+main[role='main'] {
+  padding:$space-l;
+  overflow-y: auto;
+}

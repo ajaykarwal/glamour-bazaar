@@ -1,0 +1,33 @@
+$break-xs: 480px;
+$break-sm: 768px;
+$break-md: 992px;
+$break-lg: 1200px;
+
+$white: #ffffff;
+
+$grey-very-light: #e7e7e7;
+$grey-light: #cccccc;
+$grey-medium: #575756;
+$grey-dark: #4A4A49;
+$grey-very-dark: #222222;
+
+$gold: #dba822;
+$red: #BE1622;
+
+
+$brand-primary: $gold;
+$brand-secondary: $red;
+
+$fw-light: 100;
+$fw-normal: 300;
+$fw-medium: 400;
+$fw-bold: 700;
+
+// $container-width: 600px;
+
+$space: 1em;
+$space-xs: .25em;
+$space-s: .5em;
+$space-m: $space;
+$space-l: 2em;
+$space-xl: 3em;
