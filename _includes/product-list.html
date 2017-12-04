@@ -1,0 +1,25 @@
+{% assign sortedproducts = site.products | where: "subcategory", include.subcategory %}
+
+<div class="product-list">
+    {% for product in sortedproducts %}
+    <div class="product-list__item">
+            {% if product.outofstock != true %}
+            OUT OF STOCK
+            {% endif %}
+        <a href="{{product.url|relative_url}}">
+        {% if product.thumbnail %}
+        <img src="{{product.thumbnail}}" alt="">
+        {% endif %}
+        <p class="product-list__item--name">
+            {{product.title}}
+        </p>
+        <p class="product-list__item--code">
+            {{product.slug}}
+        </p>
+    </a>
+        <!-- <p class="product-list__item--category">
+            {{product.category}} ({{product.subcategory}})
+        </p> -->
+    </div>
+    {% endfor %}
+</div>

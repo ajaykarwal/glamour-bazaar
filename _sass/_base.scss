@@ -23,14 +23,16 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
   color: $grey-dark;
-  font-weight: $fw-bold;
-  margin-top:$space;
-  margin-bottom: $space;
+  font-weight: $fw-normal;
 
   a {
     color: $grey-dark;
   }
 }
+
+h1 { font-size: 3em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; }
 
 a {
   color: $brand-primary;

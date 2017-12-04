@@ -1,0 +1,27 @@
+toc:
+  - title: Earrings
+    subitems:
+      - page: Stud Earrings
+        url: /earrings/stud-earrings/
+      - page: Hoop Earrings
+        url: /earrings/hoop-earrings/
+      - page: Drop Earrings
+        url: /earrings/drop-earrings/
+      - page: Dangle Earrings
+        url: /earrings/dangle-earrings/
+  - title: Necklaces
+    subitems:
+      - page: Piece 1
+        url: /piece1.html
+      - page: Piece 2
+        url: /piece2.html
+      - page: Piece 3
+        url: /piece3.html
+  - title: Rings
+    subitems:
+      - page: Widget 1
+        url: /widget1.html
+      - page: Widget 2
+        url: /widget2.html
+      - page: Widget 3
+        url: /widget3.html

@@ -9,13 +9,15 @@ encoding         : utf-8
 
 # google_analytics : UA-93339523-1
 
+# address: Unit 14373, PO Box 15113, Birmingham, B2 2NJ
+
 include: ["_pages"]
 
 #Collections
 collections:
   products:
     output: true
-    # permalink: /:path/
+    permalink: /:path/
 
 # Build settings
 exclude:

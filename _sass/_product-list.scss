@@ -1,0 +1,9 @@
+.product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: $space-l;
+
+    &__item {
+        border:1px solid red;
+    }
+}
