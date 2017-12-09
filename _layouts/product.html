@@ -3,21 +3,36 @@ layout: default
 ---
 
 <h1>
-    {{page.title}}
+    {{page.name}}
 </h1>
 <h2>
-    {{page.slug}}
+    {{page.description}}
 </h2>
+<p>
+    {{page.slug}}
+</p>
 <p>
     {{page.category}}
 </p>
 <p>
     {{page.subcategory}}
 </p>
+<p class="product-list__item--price">
+    £{% include decimal-price.html number=page.price %}
+</p>
+<p class="product-list__item--delivery">
+    {% if page.delivery == 0 %}
+        Free Delivery
+    {% else %}    
+        Delivery: £{% include decimal-price.html number=page.delivery %}
+    {% endif %}
+</p>
+
 {% if page.images %}
-{% for image in page.images %}
-<img src="{{image}}" alt="image">
+{% for image in (1..page.images) %}
+<img src="/images/medium/{{page.slug}}-{{image}}.jpg" alt="image">
 {% endfor %}
 {% endif %}
+
 
 {{content}}

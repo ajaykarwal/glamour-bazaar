@@ -15,15 +15,16 @@ body {
   margin: auto;
   background-color: $white;
   color: $grey-medium;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: $fw-normal;
   font-size:100%;
   line-height: 1.6;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  color: $grey-dark;
+  color: $gold;
   font-weight: $fw-normal;
+  line-height: 1.2
 
   a {
     color: $grey-dark;
@@ -39,7 +40,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: $brand-secondary;
+    color: $brand-primary;
     text-decoration: underline;
   }
 }

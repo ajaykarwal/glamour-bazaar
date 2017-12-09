@@ -1,5 +1,5 @@
 header[role='banner'] {
-  background: $grey-medium;
+  background: $grey-dark;
   color: $white;
   padding:$space-l;
   
@@ -7,6 +7,12 @@ header[role='banner'] {
     margin: 0;
     padding: 0;
     font-size: 0;
+    text-align: center;
+  }
+  .tagline {
+    @include font-size(18px);
+    margin-top: $space-l;
+    text-align: center;
   }
 
   svg {
@@ -76,14 +82,20 @@ header[role='banner'] {
   }
   nav {
     display: none;
-
+    
     @media (min-width: $break-sm) {
       display: block;
+      margin-top: $space;
     }
 
     ul {
       list-style: none;
       padding-left: 0;
+      margin-bottom: $space;
+
+      li {
+        margin-bottom: $space-xs;
+      }
       ul {
         padding-left: $space;
       }
