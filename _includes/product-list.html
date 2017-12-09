@@ -1,0 +1,40 @@
+{% assign sortedproducts = site.products | where: "subcategory", include.subcategory %}
+
+<div class="product-list">
+    {% for product in sortedproducts %}
+    <div class="product-list__item">
+        {% if product.outofstock == true %}
+        <span class="out-of-stock">
+            Out of stock
+        </span>
+        {% endif %}
+
+        <a href="{{product.url|relative_url}}">
+            {% if product.images %}
+            {% for image in (1..product.images) limit:1 %}
+            <img src="/images/small/{{product.slug}}-{{image}}.jpg" alt="image">
+            {% endfor %}
+            {% endif %}
+            <p class="product-list__item--name">
+                {{product.name}}
+            </p>
+            <p class="product-list__item--description">
+                {{product.description}}
+            </p>
+            <!-- <p class="product-list__item--code">
+                {{product.slug}}
+            </p> -->
+            <p class="product-list__item--price">
+                £{% include decimal-price.html number=product.price %}
+            </p>
+            <p class="product-list__item--delivery">
+                {% if product.delivery == 0 %}
+                    Free Delivery
+                {% else %}    
+                    Delivery: £{% include decimal-price.html number=product.delivery %}
+                {% endif %}
+            </p>
+        </a>
+    </div>
+    {% endfor %}
+</div>

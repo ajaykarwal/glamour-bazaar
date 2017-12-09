@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<div class="product">
+    <div class="product__header">
+        <div class="product__header--details">
+            <h1>
+                {{page.name}}
+            </h1>
+            <h2>
+                {{page.description}}
+            </h2>
+            <p class="product-code">
+                Product Code: <span>{{page.slug}}</span>
+            </p>
+        </div>
+        <div class="product__header--price">
+            <p class="item-price">
+                £{% include decimal-price.html number=page.price %}
+            </p>
+            <p class="item-delivery">
+                {% if page.delivery == 0 %}
+                    Free Delivery
+                {% else %}    
+                    Delivery: £{% include decimal-price.html number=page.delivery %}
+                {% endif %}
+            </p>
+            {% if page.outofstock == true %}
+            <p class="out-of-stock">
+                Out of stock
+            </p>
+            {% else %}
+            <a href="/how-to-order" class="button">Buy</a>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="product__images">
+        {% if page.images %}
+        {% for image in (1..page.images) %}
+        <img src="/images/medium/{{page.slug}}-{{image}}.jpg" alt="image">
+        {% endfor %}
+        {% endif %}
+    </div>
+</div>
+
+
+{{content}}

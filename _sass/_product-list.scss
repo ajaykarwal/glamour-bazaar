@@ -1,0 +1,32 @@
+.product-list {
+    display: grid;
+    grid-gap: $space-l;
+    margin-top: $space;
+    grid-template-columns: 1fr;
+    
+    @media (min-width: $break-sm) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: $break-lg) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &__item {
+        a {
+            display: block;
+            color: $grey-dark;
+            padding: $space;
+            &:hover {
+                text-decoration: none;
+                box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, .08);
+            }
+        }
+        &--name {
+            font-weight: $fw-medium;
+        }
+        &--price {
+            
+            font-weight: $fw-bold;
+        }
+    }
+}
