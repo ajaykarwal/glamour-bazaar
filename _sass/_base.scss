@@ -22,18 +22,39 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  color: $gold;
+  color: $grey-dark;
   font-weight: $fw-normal;
   line-height: 1.2
-
+  
   a {
     color: $grey-dark;
   }
 }
 
-h1 { font-size: 3em; }
-h2 { font-size: 2em; }
-h3 { font-size: 1.5em; }
+h1 { 
+  @include font-size(36px);
+  color: $gold;
+  margin-top: 0;
+
+  @media (min-width: $break-sm) {
+    @include font-size(40px);
+    margin-top: $space;
+  }
+}
+h2 {
+  @include font-size(24px);
+
+  @media (min-width: $break-sm) {
+    @include font-size(30px);
+  }
+}
+h3 {
+  @include font-size(18px);
+
+  @media (min-width: $break-sm) {
+    @include font-size(22px);
+  }
+}
 
 a {
   color: $brand-primary;

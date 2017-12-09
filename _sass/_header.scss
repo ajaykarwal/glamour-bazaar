@@ -2,21 +2,29 @@ header[role='banner'] {
   background: $grey-dark;
   color: $white;
   padding:$space-l;
+
   
   .logo {
     margin: 0;
     padding: 0;
     font-size: 0;
     text-align: center;
+    z-index: 1;
   }
   .tagline {
     @include font-size(18px);
-    margin-top: $space-l;
+    margin-top: $space;
     text-align: center;
+    @media (min-width: $break-sm) {
+      margin-top: $space-l;
+    }
   }
 
   svg {
-    // width: inherit;
+    width: 170px;
+    @media (min-width: $break-sm) {
+      width:auto;
+    }
     #glamour {
       fill: $gold;
     }
@@ -36,9 +44,11 @@ header[role='banner'] {
     transition: .5s ease-in-out;
     cursor: pointer;
     z-index: 2;
+
     @media (min-width: $break-sm) {
       display: none;
     }
+    
     span {
       position: absolute;
       left: 0;

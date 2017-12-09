@@ -1,7 +1,15 @@
 .product-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: $space-l;
+    margin-top: $space;
+    grid-template-columns: 1fr;
+    
+    @media (min-width: $break-sm) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: $break-lg) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
     &__item {
         a {
