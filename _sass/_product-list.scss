@@ -1,6 +1,5 @@
 .product-list {
     display: grid;
-    grid-gap: $space-l;
     margin-top: $space;
     grid-template-columns: 1fr;
     
@@ -16,9 +15,10 @@
             display: block;
             color: $grey-dark;
             padding: $space;
+            border: 5px solid transparent;
             &:hover {
                 text-decoration: none;
-                box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, .08);
+                border-color: $grey-verylight;
             }
         }
         &--name {
