@@ -2,7 +2,7 @@
 
 <div class="product-list">
     {% for product in sortedproducts %}
-    <div class="product-list__item">
+    <div class="product-list__item{% if product.outofstock == true %} out-of-stock{%endif%}">
         {% if product.outofstock == true %}
         <span class="out-of-stock">
             Out of stock
