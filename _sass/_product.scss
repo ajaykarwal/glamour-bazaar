@@ -4,6 +4,7 @@
         display: grid;
         grid-template-columns: 1fr;
         margin-bottom: $space-l;
+        padding-bottom: $space;
         
         @media (min-width: $break-sm) {
             margin-top: $space-l;

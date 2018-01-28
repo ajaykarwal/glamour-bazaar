@@ -24,7 +24,7 @@ body {
 h1,h2,h3,h4,h5,h6 {
   color: $grey-dark;
   font-weight: $fw-normal;
-  line-height: 1.2
+  line-height: 1.2;
   
   a {
     color: $grey-dark;
@@ -95,6 +95,7 @@ audio {
 }
 
 img {
+  display: inline-block;
   max-width: 100%;
   height: auto;
 }
