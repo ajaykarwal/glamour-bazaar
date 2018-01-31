@@ -2,6 +2,8 @@
 
 <div class="product-list">
     {% for product in sortedproducts %}
+    {% if product.hidden != true %}
+       
     <div class="product-list__item{% if product.outofstock == true %} out-of-stock{%endif%}">
         {% if product.outofstock == true %}
         <span class="out-of-stock">
@@ -36,5 +38,6 @@
             </p>
         </a>
     </div>
+    {% endif %}
     {% endfor %}
 </div>

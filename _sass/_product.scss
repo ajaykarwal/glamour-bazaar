@@ -58,7 +58,7 @@
         grid-gap: $space-l;
         grid-template-columns: 1fr;
         @media (min-width: $break-sm) {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
         }
     }
 }

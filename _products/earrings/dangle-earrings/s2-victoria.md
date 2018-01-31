@@ -10,4 +10,5 @@ price: 11.00
 delivery: 0
 
 outofstock: true
+hidden: true
 ---
