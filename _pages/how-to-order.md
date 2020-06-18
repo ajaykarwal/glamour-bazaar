@@ -8,7 +8,7 @@ permalink: "/how-to-order/"
 
 Browse through our catalogue of statement jewellery and accessories and make a note of the names and codes of the products you are interested in purchasing.
 
-Simply email <a href="mailto:hello@glamourbazaar.co.uk">hello@glamourbazaar.co.uk</a> with details of the products you would like to order and a member of the team will create your order.
+Simply <a href="mailto:glamourbazaar1@gmail.com">drop us an email</a> with details of the products you would like to order and a member of the team will create your order.
 
 ## Payment
 
